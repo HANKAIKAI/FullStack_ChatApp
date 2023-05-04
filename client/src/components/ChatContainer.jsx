@@ -16,7 +16,7 @@ import {
 import db from "./firebaseConfig/firebaseConfig.js";
 
 const ChatContainer = () => {
-  let socketio = socketIOClient("http://localhost:8080");
+  let socketio = socketIOClient("http://localhost:5001");
   const [chats, setChats] = useState([]);
   const [user, setUser] = useState(localStorage.getItem("user"));
   const avatar = localStorage.getItem("avatar");
